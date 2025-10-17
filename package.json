@@ -8,7 +8,7 @@
 		"build": "vite build",
 		"serve": "vite preview",
 		"lint": "biome check",
-		"format": "biome format --write",
+		"format": "biome lint --write --unsafe",
 		"type:check": "tsc --noEmit --pretty",
 		"dev:convex": "convex dev"
 	},
