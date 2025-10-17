@@ -32,10 +32,7 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true,
-			"nursery": {
-				"useSortedClasses": "error"
-			}
+			"recommended": true
 		},
 		"domains": {
 			"react": "recommended"

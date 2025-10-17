@@ -6,7 +6,7 @@
 @plugin '../../shared/config/hero.ts';
 @plugin '@iconify/tailwind4' {
 	prefix: 'iconify';
-	prefixes: lucide, noto, flag;
+	prefixes: lucide, noto, flag, logos;
 	scale: 1.25;
 }
 
@@ -14,4 +14,10 @@
 
 @theme inline {
 	--font-sans: 'Geist Variable', sans-serif;
+}
+
+@layer base {
+	body {
+		@apply font-medium antialiased;
+	}
 }
