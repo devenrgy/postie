@@ -60,5 +60,20 @@
 				}
 			}
 		}
-	}
+	},
+	"overrides": [
+		{
+			"includes": ["src/app/styles/index.css"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noUnknownProperty": "off"
+					},
+					"suspicious": {
+						"noUnknownAtRules": "off"
+					}
+				}
+			}
+		}
+	]
 }
