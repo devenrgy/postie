@@ -4,15 +4,14 @@
 @source '../../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 
 @plugin '../../shared/config/hero.ts';
-@plugin "@iconify/tailwind4" {
- 	prefix: "iconify";
- 	prefixes: lucide, noto, flag;
- 	scale: 1.25;
+@plugin '@iconify/tailwind4' {
+	prefix: 'iconify';
+	prefixes: lucide, noto, flag;
+	scale: 1.25;
 }
-
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: 'Geist Variable', sans-serif;
+	--font-sans: 'Geist Variable', sans-serif;
 }
