@@ -4,31 +4,46 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "next dev",
+		"dev": "rm -rf .next && next dev",
 		"build": "next build",
 		"start": "next start",
 		"check": "biome check --write --unsafe",
 		"format": "biome format --write",
 		"type:check": "tsc --noEmit --pretty",
-		"dev:convex": "convex dev"
+		"auth:generate": "@better-auth/cli generate --config ./src/shared/auth/auth.ts"
 	},
 	"dependencies": {
-		"@heroui/react": "^2.8.7",
-		"framer-motion": "^12.29.2",
+		"@conform-to/react": "^1.17.1",
+		"@conform-to/zod": "^1.17.1",
+		"@heroui/react": "3.0.0-beta.7",
+		"@heroui/styles": "3.0.0-beta.7",
+		"@prisma/client": "^7.4.2",
+		"@t3-oss/env-nextjs": "^0.13.10",
+		"better-auth": "^1.5.1",
+		"lucide-react": "^0.564.0",
 		"next": "^16.1.6",
 		"react": "^19.2.4",
-		"react-dom": "^19.2.4"
+		"@fontsource-variable/geist": "^5.2.8",
+		"react-dom": "^19.2.4",
+		"zod": "^4.3.6"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.3.13",
-		"@tailwindcss/postcss": "^4.1.18",
-		"@types/node": "^20.19.30",
-		"@types/react": "^19.2.10",
+		"@biomejs/biome": "^2.4.5",
+		"@iconify-json/flag": "^1.2.11",
+		"@iconify-json/logos": "^1.2.10",
+		"@iconify-json/lucide": "^1.2.95",
+		"@iconify-json/noto": "^1.2.7",
+		"@iconify/tailwind4": "^1.2.1",
+		"@tailwindcss/postcss": "^4.2.1",
+		"@types/node": "^20.19.35",
+		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
 		"babel-plugin-react-compiler": "^1.0.0",
 		"clsx": "^2.1.1",
-		"tailwind-merge": "^3.4.0",
-		"tailwindcss": "^4.1.18",
+		"fluid-tailwindcss": "^1.0.9",
+		"prisma": "^7.4.2",
+		"tailwind-merge": "^3.5.0",
+		"tailwindcss": "^4.2.1",
 		"typescript": "^5.9.3"
 	}
 }
