@@ -1,11 +1,34 @@
+@import '@fontsource-variable/geist';
 @import 'tailwindcss';
+@import '@heroui/styles';
 
-@plugin './hero.ts';
+@plugin '@iconify/tailwind4' {
+	prefix: 'iconify';
+	prefixes: lucide, noto, flag, logos;
+	scale: 1.25;
+}
 
-@source '../../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
-
-@custom-variant dark (&:is(.dark *));
+@plugin 'fluid-tailwindcss' {
+	minViewport: 320;
+	maxViewport: 1920;
+	useRem: true;
+	rootFontSize: 16;
+	checkAccessibility: true;
+	useContainerQuery: true;
+}
 
 @theme inline {
-	--font-sans: var(--font-sans);
+	--font-sans: 'Geist Variable', system-ui;
+}
+
+@layer components {
+	.button {
+		@apply rounded-full;
+	}
+}
+
+@layer base {
+	body {
+		@apply text-foreground font-medium antialiased bg-background;
+	}
 }
