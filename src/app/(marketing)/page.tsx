@@ -89,7 +89,7 @@ export default async function LandingPage() {
 			</p>
 
 			<NextLink
-				href='/'
+				href='/login'
 				className='button button--lg mb-20 transform bg-linear-to-r from-blue-600 to-fuchsia-500 px-10 py-6 font-semibold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:from-blue-700 hover:to-purple-700'
 			>
 				Get Started Free
